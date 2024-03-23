@@ -38,11 +38,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL                &kp N1     &kp N2    &kp N3    &kp N4    &kp N5  &tog 1                                                                        &mo 3      &kp N6  &kp N7    &kp N8     &kp N9   &kp N0         &kp MINUS
-&kp TAB                  &kp Q      &kp W     &kp F     &kp P     &kp B   &none                                                                         &none      &kp J   &kp L     &kp U      &kp Y    &kp SEMICOLON  &kp BSLH
-&hm LEFT_CONTROL ESCAPE  &kp A      &kp R     &kp S     &kp T     &kp G   &none      &kp LCTRL  &kp LALT                      &kp LGUI   &kp RCTRL      &none      &kp M   &kp N     &kp E      &kp I    &kp O          &kp SQT
-&kp LSHFT                &kp Z      &kp X     &kp C     &kp D     &kp V                         &kp LC(LS(LEFT_ALT))          &kp PG_UP                            &kp K   &kp H     &kp COMMA  &kp DOT  &lt 4 SLASH    &kp RSHFT
-&mo 2                    &kp GRAVE  &kp CAPS  &kp LBKT  &kp RBKT          &kp ENTER  &kp TAB    &kp LS(LA(LC(LEFT_GUI)))      &kp PG_DN  &kp BACKSPACE  &kp SPACE          &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &mo 2
+&kp EQUAL                &kp N1     &kp N2    &kp N3    &kp N4    &kp N5  &tog 1                                                                        &mo 3        &kp N6  &kp N7    &kp N8     &kp N9   &kp N0         &kp MINUS
+&kp TAB                  &kp Q      &kp W     &kp F     &kp P     &kp B   &none                                                                         &none        &kp J   &kp L     &kp U      &kp Y    &kp SEMICOLON  &kp BSLH
+&hm LEFT_CONTROL ESCAPE  &kp A      &kp R     &kp S     &kp T     &kp G   &none      &kp LCTRL  &kp LALT                      &kp LGUI   &kp RCTRL      &none        &kp M   &kp N     &kp E      &kp I    &kp O          &kp SQT
+&kp LSHFT                &kp Z      &kp X     &kp C     &kp D     &kp V                         &kp LC(LS(LEFT_ALT))          &kp PG_UP                              &kp K   &kp H     &kp COMMA  &kp DOT  &lt 4 SLASH    &kp RSHFT
+&mo 2                    &kp GRAVE  &kp CAPS  &kp LBKT  &kp RBKT          &kp ENTER  &kp TAB    &kp LS(LA(LC(LEFT_GUI)))      &kp PG_DN  &kp BACKSPACE  &lt 5 SPACE          &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &mo 2
             >;
         };
 
@@ -83,6 +83,16 @@
 &trans  &trans  &caps_word  &kp LPAR       &kp RPAR  &kp EQUAL  &trans      &trans  &trans      &trans  &trans         &trans     &kp MINUS       &kp DOLLAR       &kp PRCNT     &kp CARET  &trans   &trans
 &trans  &trans  &trans      &kp LBRC       &kp RBRC  &kp TILDE                      &trans      &trans                            &kp GRAVE       &kp EXCLAMATION  &kp AT        &kp HASH   &trans   &trans
 &trans  &trans  &trans      &kp LESS_THAN  &kp GT               &kp RETURN  &trans  &trans      &trans  &kp BACKSPACE  &kp SPACE                  &trans           &trans        &trans     &trans   &trans
+            >;
+        };
+
+        layer_new_symb {
+            bindings = <
+&trans       &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMICOLON     &kp COMMA     &trans                                                       &trans  &trans  &trans          &trans       &trans     &trans   &trans
+&kp EXCL     &kp LEFT_BRACE  &kp SQT           &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION  &trans                                                       &trans  &trans  &kp LEFT_SHIFT  &trans       &trans     &trans   &trans
+&kp HASH     &kp CARET       &kp EQUAL         &kp UNDER          &kp DOLLAR        &kp STAR      &trans     &kp PERIOD     &kp BACKSLASH      &trans  &trans  &trans  &trans  &kp BACKSPACE   &kp TAB      &kp SPACE  &kp RET  &trans
+&kp TILDE    &kp LESS_THAN   &kp PIPE          &kp MINUS          &kp GREATER_THAN  &kp SLASH                               &trans             &trans                  &trans  &kp DEL         &kp RS(TAB)  &trans     &trans   &trans
+&kp AT_SIGN  &kp AMPERSAND   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS                        &kp COLON  &kp SEMICOLON  &kp PERCENT        &trans  &trans  &trans          &trans          &trans       &trans     &trans   &trans
             >;
         };
     };
